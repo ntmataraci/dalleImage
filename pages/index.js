@@ -14,6 +14,7 @@ export default function Home() {
   if (!data.ok){
     const message="this sentece is beyond of my capacity"
     setErrMsg(message)
+    console.log(data)
   }
 
     const result = await data.json();
